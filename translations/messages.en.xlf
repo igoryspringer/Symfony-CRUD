@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0" srcLang="en" trgLang="en">
+  <file id="messages.en">
+    <unit id="0BCjXjn" name="label.article.name">
+      <notes>
+        <note category="file-source" priority="1">templates/entity/index.html.twig:17</note>
+        <note category="file-source" priority="1">templates/entity/show.html.twig:7</note>
+        <note category="file-source" priority="1">templates/article/index.html.twig:30</note>
+        <note category="file-source" priority="1">src/Form/ArticleType.php:32</note>
+      </notes>
+      <segment>
+        <source>label.article.name</source>
+        <target>Name</target>
+      </segment>
+    </unit>
+    <unit id="c3ycAxN" name="label.article.description">
+      <notes>
+        <note category="file-source" priority="1">templates/entity/index.html.twig:18</note>
+        <note category="file-source" priority="1">templates/entity/show.html.twig:8</note>
+        <note category="file-source" priority="1">templates/article/index.html.twig:31</note>
+        <note category="file-source" priority="1">src/Form/ArticleType.php:38</note>
+      </notes>
+      <segment>
+        <source>label.article.description</source>
+        <target>Description</target>
+      </segment>
+    </unit>
+    <unit id="1l_F6q4" name="label.article.created_at">
+      <notes>
+        <note category="file-source" priority="1">templates/entity/index.html.twig:19</note>
+        <note category="file-source" priority="1">templates/entity/show.html.twig:9</note>
+        <note category="file-source" priority="1">templates/article/index.html.twig:32</note>
+        <note category="file-source" priority="1">src/Form/ArticleType.php:44</note>
+      </notes>
+      <segment>
+        <source>label.article.created_at</source>
+        <target>Created at</target>
+      </segment>
+    </unit>
+    <unit id="cMLFYZw" name="createdAt">
+      <notes>
+        <note category="file-source" priority="1">src/Form/Article1Type.php:14</note>
+      </notes>
+      <segment>
+        <source>createdAt</source>
+        <target>Created at</target>
+      </segment>
+    </unit>
+    <unit id="yQRveje" name="description">
+      <notes>
+        <note category="file-source" priority="1">src/Form/Article1Type.php:14</note>
+      </notes>
+      <segment>
+        <source>description</source>
+        <target>Description</target>
+      </segment>
+    </unit>
+    <unit id="gqNTf.D" name="name">
+      <notes>
+        <note category="file-source" priority="1">src/Form/Article1Type.php:14</note>
+        <note category="file-source" priority="1">src/Form/ProductType.php:14</note>
+      </notes>
+      <segment>
+        <source>name</source>
+        <target>Name</target>
+      </segment>
+    </unit>
+    <unit id="lqle3dm" name="label.user.username">
+      <notes>
+        <note category="file-source" priority="1">src/Form/RegisterType.php:19</note>
+      </notes>
+      <segment>
+        <source>label.user.username</source>
+        <target>Username</target>
+      </segment>
+    </unit>
+    <unit id="N1TQ8Qw" name="label.user.password1">
+      <notes>
+        <note category="file-source" priority="1">src/Form/RegisterType.php:24</note>
+      </notes>
+      <segment>
+        <source>label.user.password1</source>
+        <target>Password1</target>
+      </segment>
+    </unit>
+    <unit id="wm0nNlG" name="label.user.password2">
+      <notes>
+        <note category="file-source" priority="1">src/Form/RegisterType.php:25</note>
+      </notes>
+      <segment>
+        <source>label.user.password2</source>
+        <target>Password2</target>
+      </segment>
+    </unit>
+    <unit id="WmZ0NgH" name="label.article.submit">
+      <notes>
+        <note category="file-source" priority="1">src/Form/RegisterType.php:27</note>
+        <note category="file-source" priority="1">src/Form/ArticleType.php:47</note>
+      </notes>
+      <segment>
+        <source>label.article.submit</source>
+        <target>Submit</target>
+      </segment>
+    </unit>
+    <unit id="XohImNo" name="password">
+      <notes>
+        <note category="file-source" priority="1">src/Form/RegisterType.php:18</note>
+      </notes>
+      <segment>
+        <source>password</source>
+        <target>Password</target>
+      </segment>
+    </unit>
+    <unit id="PkmF7xC" name="label.article.reset">
+      <notes>
+        <note category="file-source" priority="1">src/Form/ArticleType.php:50</note>
+      </notes>
+      <segment>
+        <source>label.article.reset</source>
+        <target>Reset</target>
+      </segment>
+    </unit>
+    <unit id="ZvGPauc" name="Enter name here...">
+      <notes>
+        <note category="file-source" priority="1">src/Form/ArticleType.php:35</note>
+      </notes>
+      <segment>
+        <source>Enter name here...</source>
+        <target>Enter name here...</target>
+      </segment>
+    </unit>
+    <unit id="uaI2BbG" name="Enter description here...">
+      <notes>
+        <note category="file-source" priority="1">src/Form/ArticleType.php:41</note>
+      </notes>
+      <segment>
+        <source>Enter description here...</source>
+        <target>Enter description here...</target>
+      </segment>
+    </unit>
+    <unit id="OeD179w" name="height">
+      <notes>
+        <note category="file-source" priority="1">src/Form/ProductType.php:14</note>
+      </notes>
+      <segment>
+        <source>height</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit id="CETfj_6" name="weight">
+      <notes>
+        <note category="file-source" priority="1">src/Form/ProductType.php:14</note>
+      </notes>
+      <segment>
+        <source>weight</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit id="7bLNO3T" name="category">
+      <notes>
+        <note category="file-source" priority="1">src/Form/ProductType.php:14</note>
+      </notes>
+      <segment>
+        <source>category</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit id="aDtTH0H" name="price">
+      <notes>
+        <note category="file-source" priority="1">src/Form/ProductType.php:14</note>
+      </notes>
+      <segment>
+        <source>price</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit id="RkxP.QG" name="Edit">
+      <notes>
+        <note category="file-source" priority="1">templates/entity/index.html.twig:28</note>
+        <note category="file-source" priority="1">templates/entity/show.html.twig:17</note>
+      </notes>
+      <segment>
+        <source>Edit</source>
+        <target>Edit</target>
+      </segment>
+    </unit>
+    <unit id="4tClSWj" name="Delete">
+      <notes>
+        <note category="file-source" priority="1">templates/entity/index.html.twig:29</note>
+        <note category="file-source" priority="1">templates/entity/show.html.twig:18</note>
+      </notes>
+      <segment>
+        <source>Delete</source>
+        <target>Delete</target>
+      </segment>
+    </unit>
+    <unit id="DfbxytN" name="Show">
+      <notes>
+        <note category="file-source" priority="1">templates/entity/index.html.twig:30</note>
+      </notes>
+      <segment>
+        <source>Show</source>
+        <target>Show</target>
+      </segment>
+    </unit>
+    <unit id="R1lJisK" name="Create">
+      <notes>
+        <note category="file-source" priority="1">templates/entity/index.html.twig:33</note>
+      </notes>
+      <segment>
+        <source>Create</source>
+        <target>Create</target>
+      </segment>
+    </unit>
+    <unit id="dpAPG.0" name="Back">
+      <notes>
+        <note category="file-source" priority="1">templates/entity/edit.html.twig:5</note>
+        <note category="file-source" priority="1">templates/entity/show.html.twig:19</note>
+        <note category="state" priority="1">new</note>
+      </notes>
+      <segment>
+        <source>Back</source>
+        <target>Back</target>
+      </segment>
+    </unit>
+    <unit id="FtHJBQo" name="Table">
+      <notes>
+        <note category="file-source" priority="1">templates/entity/index.html.twig:5</note>
+        <note category="state" priority="1">new</note>
+      </notes>
+      <segment>
+        <source>Table</source>
+        <target>Table</target>
+      </segment>
+    </unit>
+  </file>
+</xliff>

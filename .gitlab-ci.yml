@@ -1,0 +1,35 @@
+image: ubuntu:bionic
+
+services:
+  - postgres:11
+
+variables:
+  POSTGRES_PASSWORD: gfnhbjn #root
+  POSTGRES_USER: postgres #root
+  POSTGRES_DB: symfonycrud #symfony
+
+
+before_script:
+  - apt-get update
+  - apt-get install software-properties-common -y
+  - ln -sf /usr/share/zoneinfo/Asia/Tokyo /etc/localtime
+  - apt-get install curl wget git php php-cli php7.2 php7.2-xml php7.2-dom php7.2-common php7.2-pgsql php7.2-mysql php7.2-intl php7.2-gd php7.2-xml php7.2-opcache php7.2-mbstring php7.2-zip libfontconfig1 fontconfig libxrender-dev libfreetype6 libxrender1 xvfb -y -qq
+  - php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
+  - php composer-setup.php --install-dir=/usr/local/bin --filename=composer
+  - php -r "unlink('composer-setup.php');"
+  - composer
+  - php -v
+  - php -m
+  - composer install --ignore-platform-reqs
+  - bin/console doctrine:schema:update --force
+  - bin/console doctrine:schema:validate
+  - bin/console doctrine:fixtures:load
+
+stages:
+  - test
+
+test:
+  script:
+    - vendor/bin/php-cs-fixer fix -v --dry-run --stop-on-violation --using-cache=no src/ --rules=@Symfony
+    - vendor/bin/phpstan analyse src --level=1
+    - vendor/bin/simple-phpunit

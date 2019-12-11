@@ -1,0 +1,11 @@
+knp_snappy:
+    pdf:
+        enabled:    true
+#        binary:     '%kernel.project_dir%/bin/wkhtmltopdf'
+        options:
+            encoding: 'utf-8'
+            page-size: 'A4'
+    image:
+        enabled:    true
+        binary:     '%env(WKHTMLTOIMAGE_PATH)%'
+        options:    []

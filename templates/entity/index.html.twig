@@ -1,0 +1,35 @@
+{% extends 'base.html.twig' %}
+    {% block title %}Article{% endblock %}
+{% block body %}
+    <Table border="1">
+        <caption style=" front-size:xx=large"> {{ 'Table'|trans }} </caption>
+
+        <div class="float-right" style="margin-top: 13px">
+            <div class="navbar-header">
+                <div class="row">
+                    <a href="{{ path('article_locale', {'locale': 'en'}) }}">EN&nbsp;</a>
+                    <a href="{{ path('article_locale', {'locale': 'ru'}) }}">&nbsp;RU</a>
+                </div>
+            </div>
+        </div>
+
+        <tr style="font-weight: bold" >
+            <td>{{ 'label.article.name'|trans }}</td>
+            <td>{{ 'label.article.description'|trans }}</td>
+            <td>{{ 'label.article.created_at'|trans }}</td> <td></td>
+        </tr>
+        {% for article in articles %}
+    <tr>
+        <td>{{ article.name }}</td>
+        <td>{{ article.description }}</td>
+        <td>{{ article.createdAt|date('Y-m-d') }}</td>
+    </tr>
+            <td>
+                <a href="{{ path('article_edit', {'id': article.id}) }}"> {{ 'Edit'|trans }} </a>
+                <a href="{{ path('article_delete', {'id': article.id}) }}"> {{ 'Delete'|trans }} </a>
+                <a href="{{ path('article_show', {'id': article.id}) }}"> {{ 'Show'|trans }} </a>
+            </td>
+        {% endfor %}
+        <a href="{{ path('article_new') }}"> {{ 'Create'|trans }} </a>
+    </Table>
+{% endblock %}

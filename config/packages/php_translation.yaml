@@ -1,0 +1,15 @@
+translation:
+    locales: ["en", "ru"]
+    edit_in_place:
+        enabled: true
+        config_name: article
+    configs:
+        article:
+            dirs: ["%kernel.project_dir%/templates", "%kernel.project_dir%/src"]
+            output_dir: "%kernel.project_dir%/translations"
+            excluded_names: ["*TestCase.php", "*Test.php"]
+            excluded_dirs: [cache, data, logs]
+    symfony_profiler:
+        enabled: true
+    webui:
+        enabled: true

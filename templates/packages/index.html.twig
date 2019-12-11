@@ -1,0 +1,9 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    {{ packages|length }}
+    <br>
+    {% for package in packages %}
+        {{ package }}<br>
+    {% endfor %}
+{% endblock %}

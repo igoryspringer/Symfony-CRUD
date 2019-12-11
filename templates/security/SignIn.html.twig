@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}SignIn{% endblock %}
+
+{% block body %}
+<form method="post">
+    {% if error %}
+    <div>{{ error.messageKey|trans(error.messageData, 'security') }}</div>
+    {% endif %}
+    <label for="inputName">User Name</label><br/>
+    <input type="text" value="{{ last_username }}" name="username" id="inputName"><br/>
+    <label for="inputPassword">Password</label><br/>
+    <input type="password" name="password" id="inputPassword">
+
+    <input type="hidden" name="_csrf_token" value="{{ csrf_token('authenticate') }}"><br/>
+    <!--{# <a href="{{ path('create_user') }}">Create User</a><br/><br/> #}-->
+    <button type="submit" name="submit">Sign in</button>
+</form>
+{% endblock %}
